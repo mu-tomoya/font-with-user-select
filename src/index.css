@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Noto+Sans+JP&display=swap");
+html,
+body {
+  margin: 0;
+  height: auto;
+}
+form {
+  margin: 0;
+}
+
+:root {
+  --font-family: "Noto Sans JP", sans-serif;
+  --letter-spacing: 0.1rem;
+  --line-height: 1.5;
+}
+.button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #821baf;
+  color: #fff;
+  border-radius: 0.25rem;
+  transition: background 0.3s;
+}
+.delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+  .delete-button-icon {
+    fill: #888;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+.button-group {
+  display: flex;
+  margin: 1rem;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 500px;
+  height: 100%;
+  background-color: #f4f4f4;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease-in-out;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.side-menu h2 {
+  padding: 20px;
+  margin: 0;
+  background-color: #007bff;
+  color: white;
+}
+
+.side-menu input[type="text"] {
+  width: 150px;
+  box-sizing: border-box;
+}
+
+.paragraph {
+  font-family: var(--font-family), sans-serif;
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height);
+  margin: 5rem;
+}

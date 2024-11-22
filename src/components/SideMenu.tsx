@@ -64,6 +64,7 @@ const SideMenu: React.FC = () => {
             <input
               id="letter-spacing"
               type="number"
+              inputMode="numeric"
               step="0.1"
               min={-2}
               max={3}
@@ -76,8 +77,9 @@ const SideMenu: React.FC = () => {
             <input
               id="line-height"
               type="number"
+              inputMode="numeric"
               step="0.1"
-              min={0.5}
+              min={1}
               max={3}
               value={lineHeight}
               onChange={handleChangeLineHeight}

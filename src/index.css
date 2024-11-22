@@ -22,6 +22,11 @@ form {
   border-radius: 0.25rem;
   transition: background 0.3s;
 }
+.side-menu-component {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+}
 .delete-button {
   position: absolute;
   top: 0;
@@ -46,9 +51,6 @@ form {
 }
 
 .menu-button {
-  position: fixed;
-  top: 20px;
-  right: 20px;
   padding: 10px 20px;
   background-color: #007bff;
   color: white;

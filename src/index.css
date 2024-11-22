@@ -89,3 +89,17 @@ form {
   line-height: var(--line-height);
   margin: 5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .side-menu {
+    right: -100vw;
+    width: 100vw;
+  }
+  .side-menu input[type="text"] {
+    width: auto;
+    box-sizing: border-box;
+  }
+  .paragraph {
+    margin: 2rem;
+  }
+}
